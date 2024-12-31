@@ -2,6 +2,8 @@ import os
 import random
 # import basic python packages
 import numpy as np
+import time
+run_time=time
 
 # import torch packages
 import torch
@@ -13,6 +15,8 @@ from deeptfactor.process_data import read_fasta_data
 from deeptfactor.data_loader import EnzymeDataset
 from deeptfactor.utils import argument_parser
 from deeptfactor.models import DeepTFactor
+
+
 
 
 
@@ -59,7 +63,7 @@ if __name__ == '__main__':
             cnt += x_length
 
     scores = y_pred[:,0]
-    with open(f'{output_dir}/prediction_result.txt', 'w') as fp:
+    with open(f'{output_dir}/{os.path.basename(protein_data_file)}_prediction_result.txt', 'w') as fp:
         fp.write('sequence_ID\tprediction\tscore\n')
         for seq_id, score in zip(seq_ids, scores):
             if score > cutoff:

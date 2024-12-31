@@ -1,0 +1,11 @@
+sequence_ID	prediction	score
+>CGIg22682	False	0.4037
+>CGIg22683	False	0.0761
+>CGIg22684	False	0.1434
+>CGIg22685	False	0.0054
+>CGIg22687	False	0.0110
+>CGIg22689	False	0.0036
+>CGIg22690	False	0.0136
+>CGIg22691	False	0.1135
+>CGIg22692	False	0.0102
+>CGIg22694	False	0.0756
