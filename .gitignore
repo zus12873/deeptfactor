@@ -5,9 +5,9 @@
 .ipynb_checkpoints/
 .DS_Store
 
-
-
-
+data
+Dataset/cgi_pep.fa
+result
 
 
 
